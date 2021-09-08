@@ -1,6 +1,4 @@
 // 1. Import tax-calculator.js using CommonJS
-const calculator = require("./tax-calculator.js");
-console.log(calculator);
 
 const cart = [
     {
