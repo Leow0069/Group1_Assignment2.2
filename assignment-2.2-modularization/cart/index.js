@@ -1,4 +1,5 @@
 // 1. Import tax-calculator.js using CommonJS
+const calculator = require('./tax-calculator.js');
 
 const cart = [
     {
@@ -15,7 +16,6 @@ const cart = [
     }
 ];
 
-const calculator = require('./tax-calculator.js');
 
 // 2. Use array iteration method to produce an amount payable using the property "price".
 const amountPayable = cart.map(({item: i, price: p}) => p).reduce((curr, next) => curr + next);
